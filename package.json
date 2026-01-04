@@ -1,5 +1,5 @@
 {
-  "name": "b-ziers-proxy",
+  "name": "beziers-proxy",
   "version": "1.0.0",
   "main": "proxy.js",
   "type": "module",
