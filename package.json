@@ -8,7 +8,4 @@
     "node-fetch": "^3.3.2"
   }
 }
-/ton-site/
-   index.html
-   script.js
-   lignes_beemob.geojson
+
