@@ -19,23 +19,3 @@ app.get("/bus", async (req, res) => {
 });
 
 app.listen(3000, () => console.log("Proxy opérationnel sur port 3000"));
-async function chargerLignes() {
-    try {
-        const res = await fetch("lignes_beziers.geojson");
-        const data = await res.json();
-
-        L.geoJSON(data, {
-            style: {
-                color: "#0074D9",
-                weight: 4,
-                opacity: 0.8
-            }
-        }).addTo(map);
-
-        console.log("Lignes chargées !");
-    } catch (err) {
-        console.error("Erreur chargement lignes :", err);
-    }
-}
-
-chargerLignes();
